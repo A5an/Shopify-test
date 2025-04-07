@@ -1,0 +1,14 @@
+api_version = "2025-04"
+[[extensions]]
+name = "t:name"
+handle = "product-bundle"
+type = "ui_extension"
+
+[[extensions.targeting]]
+module = "./src/ProductBundleExtension.jsx"
+target = "admin.product-details.action.render"
+
+# Valid extension targets:
+# Product details page
+# - admin.product-details.action.render 
+# - admin.product-details.action.menu 
